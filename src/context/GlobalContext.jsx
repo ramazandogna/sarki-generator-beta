@@ -8,6 +8,7 @@ export const GlobalProvider = ({ children }) => {
    const [muzikKonu, setMuzikKonu] = useState('');
    const [secim, setSecim] = useState('Pop');
    const [sayi, setSayi] = useState('');
+   const [id, setId] = useState('1');
 
    const inputRef1 = useRef(null);
    const inputRef2 = useRef(null);
@@ -33,6 +34,8 @@ export const GlobalProvider = ({ children }) => {
             setSecim,
             sayi,
             setSayi,
+            id,
+            setId,
          }}
       >
          {children}

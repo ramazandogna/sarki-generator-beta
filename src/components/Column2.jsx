@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import GlobalContext from '../context/GlobalContext';
 
 export const Column2 = () => {
-   const { muzikKonu, sayi, secim } = useContext(GlobalContext);
+   const { muzikKonu, sayi, secim, id } = useContext(GlobalContext);
    return (
       <div className=" bg-violet-200 rounded-xl h-full border-3 p-4 max-w-full">
          <div className=" p-2 my-3 rounded-lg italic bg-violet-50">
@@ -15,7 +15,9 @@ export const Column2 = () => {
          <div className=" p-2 my-3 rounded-lg italic bg-violet-50">
             Türü değeri: {secim}
          </div>
-         <div className=" p-2 my-3 rounded-lg italic bg-violet-50">ID: #43</div>
+         <div className=" p-2 my-3 rounded-lg italic bg-violet-50">
+            ID: #{id}
+         </div>
          <p className=" text-center mt-8">
             Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır
             metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat

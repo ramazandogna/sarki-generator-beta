@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import GlobalContext from '../context/GlobalContext';
 
 function Column3() {
-   // const {} = useContext(GlobalContext); //bu kısma contexten aldığımız veriler gelcek
+   const { setId } = useContext(GlobalContext); //bu kısma contexten aldığımız veriler gelcek
 
    return (
       <div className=" text-center bg-blue-200 rounded-xl h-5/6 border-3 p-4 max-h-full">
@@ -19,6 +19,7 @@ function Column3() {
                className=" mt-1 w-1/2 flex ml-auto mr-auto appearance-none bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                id="grid-first-name"
                type="number"
+               onChange={(event) => setId(event.target.value)}
                placeholder="Şarkı ID"
             />
             <button
